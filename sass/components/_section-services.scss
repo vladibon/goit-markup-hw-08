@@ -1,0 +1,27 @@
+.service {
+  @extend %grid;
+}
+
+.service__item {
+  position: relative;
+  @include gridItem(3);
+}
+
+.service__overlay {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  min-height: 70px;
+  @extend %flexCenter;
+
+  background-color: $service-overlay;
+}
+
+.service__title {
+  @extend %title;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $white-text-color;
+}

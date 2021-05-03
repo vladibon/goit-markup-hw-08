@@ -1,0 +1,28 @@
+.social {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  @extend %flexCenter;
+
+  text-decoration: none;
+  fill: $icon-color;
+  background-color: inherit;
+  border-radius: 50%;
+  transition: fill $animation, background-color $animation;
+
+  &--white {
+    fill: $white-text-color;
+    background-color: $footer-bg-icon-color;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $white-text-color;
+    background-color: $accent-color;
+  }
+}

@@ -1,0 +1,86 @@
+.filter {
+  @extend %list;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio {
+  @extend %grid;
+}
+
+.portfolio__item {
+  @include gridItem(3);
+}
+
+.project {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: $primary-bg-color;
+  transition: box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: $project-card-shadow;
+  }
+
+  &__img {
+    position: relative;
+    background-color: $project-border-color;
+    overflow: hidden;
+  }
+
+  &__descr {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white-text-color;
+  }
+
+  &__content {
+    padding: 20px 24px;
+
+    border-right: 1px solid $project-border-color;
+    border-bottom: 1px solid $project-border-color;
+    border-left: 1px solid $project-border-color;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+  }
+
+  &__type {
+    font-size: 16px;
+  }
+  line-height: 1.87;
+}
+
+.project__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background-color: $project-overlay;
+  transform: translateY(100%);
+  transition: transform $animation;
+
+  .project:hover &,
+  .project:focus & {
+    transform: translateY(0);
+  }
+}

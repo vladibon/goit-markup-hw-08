@@ -1,0 +1,34 @@
+.team {
+  @extend %grid;
+}
+
+.team__item {
+  @include gridItem(4);
+}
+
+.employee {
+  background-color: $primary-bg-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: $shadow;
+}
+
+.employee__info {
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.employee__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $title-text-color;
+}
+
+.employee__pos {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+}
