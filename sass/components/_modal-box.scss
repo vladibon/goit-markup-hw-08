@@ -24,8 +24,9 @@
   left: 50%;
 
   width: 100%;
-  max-width: 528px;
-  min-height: 580px;
+  max-width: 450px;
+  // min-height: 580px;
+
   padding: 40px;
 
   background-color: $primary-bg-color;
@@ -36,6 +37,11 @@
 
   .backdrop--is-hidden & {
     transform: translate(-50%, 0%) scaleX(0);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+    min-height: 580px;
   }
 }
 

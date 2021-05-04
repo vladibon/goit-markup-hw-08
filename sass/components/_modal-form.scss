@@ -8,8 +8,15 @@
   margin-bottom: 12px;
 
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+
+  text-align: center;
+
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__content {
@@ -86,6 +93,11 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $desktop - 1px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 
 .agree__icon {

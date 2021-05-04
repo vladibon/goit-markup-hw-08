@@ -1,13 +1,29 @@
 .client {
-  @extend %grid;
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$grid-item-gap / 2;
 }
 
 .client__item {
-  @include gridItem(6);
+  @media screen and (max-width: $tablet - 1px) {
+    margin: $grid-item-gap / 2;
+    flex-basis: calc((100% - 2 * #{$grid-item-gap}) / 2);
+    flex-grow: 1;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: $grid-item-gap / 2;
+    flex-basis: calc((100% - 3 * #{$grid-item-gap}) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 6 * #{$grid-item-gap}) / 6);
+  }
 }
 
 .client__link {
-  width: 170px;
   height: 92px;
   @extend %flexCenter;
 

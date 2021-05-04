@@ -9,6 +9,32 @@ img {
   display: block;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--service {
+    @media screen and (max-width: $desktop - 1px) {
+      display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 0;
+    }
+  }
+
+  &--team {
+    background-color: $accent-bg-color;
+  }
+
+  outline: 1px solid tomato;
+}
+
 .page {
   font-family: $main-font;
   font-size: 14px;
@@ -18,31 +44,18 @@ img {
   background-color: $primary-bg-color;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &--feature {
-    padding-bottom: 0;
-  }
-
-  &--team {
-    background-color: $accent-bg-color;
-  }
-}
-
 .section__heading {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }

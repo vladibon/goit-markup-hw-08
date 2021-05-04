@@ -5,12 +5,30 @@
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .page-footer__social-links {
-  width: 206px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: 206px;
+  }
 }
 
 .page-footer__logo {
@@ -24,12 +42,27 @@
 
   display: block;
   color: $white-text-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 // Footer Contacts
 .contacts {
-  width: 270px;
-  margin-right: 30px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: 270px;
+    margin-right: 30px;
+  }
 }
 
 .contacts__list {
@@ -47,7 +80,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   &:hover,
@@ -58,19 +91,32 @@
 
 // Subscription Form
 .subscription-form {
-  width: 570px;
-  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    flex-basis: 450px;
+  }
 
-  display: flex;
-  align-items: flex-end;
+  @media screen and (min-width: $desktop) {
+    flex-basis: 570px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .subscription-form__field {
-  margin-right: 12px;
-  flex-grow: 1;
+  @media screen and (max-width: $desktop - 1px) {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 12px;
+    flex-grow: 1;
+  }
 }
 
 .subscription-form__btn {
+  margin: 0 auto;
   @extend %flexCenter;
 }
 

@@ -1,10 +1,16 @@
 .service {
-  @extend %grid;
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$grid-item-gap / 2;
 }
 
 .service__item {
   position: relative;
-  @include gridItem(3);
+
+  margin: $grid-item-gap / 2;
+  flex-basis: calc((100% - 3 * #{$grid-item-gap}) / 3);
 }
 
 .service__overlay {
@@ -20,7 +26,6 @@
 
 .service__title {
   @extend %title;
-  margin-top: 0;
   margin-bottom: 0;
 
   color: $white-text-color;
