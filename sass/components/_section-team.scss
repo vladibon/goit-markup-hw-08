@@ -1,9 +1,28 @@
 .team {
-  @extend %grid;
+  @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$grid-item-gap / 2;
+  }
 }
 
 .team__item {
-  @include gridItem(4);
+  @media screen and (max-width: $tablet - 1px) {
+    &:not(:last-child) {
+      margin-bottom: $grid-item-gap;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: $grid-item-gap / 2;
+    flex-basis: calc((100% - 2 * #{$grid-item-gap}) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 4 * #{$grid-item-gap}) / 4);
+  }
 }
 
 .employee {
@@ -13,8 +32,13 @@
 }
 
 .employee__info {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .employee__name {
@@ -29,6 +53,7 @@
 
 .employee__pos {
   margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.2;
 }
