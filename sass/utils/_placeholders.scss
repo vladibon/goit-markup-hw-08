@@ -5,13 +5,12 @@
   list-style: none;
 }
 
-%grid {
-  @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -$grid-item-gap;
-  margin-top: -$grid-item-gap;
-}
+// %grid {
+//   @extend %list;
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: -$grid-item-gap / 2;
+// }
 
 %flexCenter {
   display: flex;
@@ -20,7 +19,11 @@
 }
 
 %title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.143;
   text-transform: uppercase;
+  text-align: center;
 }

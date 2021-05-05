@@ -1,5 +1,4 @@
-@mixin gridItem($items-num: 3) {
-  flex-basis: calc((100% - #{$items-num} * #{$grid-item-gap}) / #{$items-num});
-  margin-left: $grid-item-gap;
-  margin-top: $grid-item-gap;
-}
+// @mixin gridItem($items-num: 3) {
+//   flex-basis: calc((100% - #{$items-num} * #{$grid-item-gap}) / #{$items-num});
+//   margin: $grid-item-gap / 2;
+// }
