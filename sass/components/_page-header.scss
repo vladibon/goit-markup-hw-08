@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid $header-border-color;
 
   &__container {
@@ -83,5 +84,52 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  fill: $title-text-color;
+  background-color: transparent;
+  transition: fill $animation;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.menu-btn__icon {
+  .menu-btn--is-open & {
+    display: none;
+  }
+}
+
+.menu-btn__icon-close {
+  display: none;
+
+  .menu-btn--is-open & {
+    display: block;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  padding: 48px 40px;
+  display: none;
+
+  font-size: 20px;
+  background-color: $primary-bg-color;
+
+  &--is-open {
+    display: block;
   }
 }

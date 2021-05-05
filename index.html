@@ -44,6 +44,22 @@
               <a class="link site-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
+
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-btn
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-btn__icon" href="./images/icons.svg#menu"></use>
+              <use
+                class="menu-btn__icon-close"
+                href="./images/icons.svg#menu-close"
+              ></use>
+            </svg>
+          </button>
         </nav>
 
         <!-- Header Contacts -->
@@ -67,6 +83,9 @@
           </li>
         </ul>
       </div>
+
+      <!-- Menu -->
+      <div class="menu" id="menu" data-menu>Menu</div>
     </header>
 
     <main>
@@ -706,5 +725,6 @@
 
     <!-- Script -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

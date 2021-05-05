@@ -80,5 +80,11 @@
     <symbol id="check" viewBox="0 0 34 32">
       <path fill="var(--color3, #fff)" stroke="var(--color3, #fff)" stroke-width=".427" d="M8.442 16.537l-.147-.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"/>
     </symbol>
+    <symbol id="menu" viewBox="0 0 40 40">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+    </symbol>
+    <symbol id="menu-close" viewBox="0 0 40 40">
+      <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"/>
+    </symbol>
   </defs>
 </svg>
