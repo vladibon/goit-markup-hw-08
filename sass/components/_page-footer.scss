@@ -10,20 +10,19 @@
     align-items: baseline;
   }
 
-  @media screen and (max-width: $desktop - 1px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
 .page-footer__social-links {
-  @media screen and (min-width: $tablet) {
-    flex-basis: 50%;
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
   }
 
-  @media screen and (max-width: $desktop - 1px) {
-    margin-bottom: 60px;
-    text-align: center;
+  @media screen and (min-width: $tablet) {
+    flex-basis: 50%;
   }
 
   @media screen and (min-width: $desktop) {
@@ -39,12 +38,11 @@
 .page-footer__title {
   @extend %title;
   margin-bottom: 20px;
-
   display: block;
   color: $white-text-color;
 
-  @media screen and (min-width: $desktop) {
-    text-align: left;
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
   }
 }
 
@@ -115,11 +113,6 @@
   }
 }
 
-.subscription-form__btn {
-  margin: 0 auto;
-  @extend %flexCenter;
-}
-
 .subscription-form__input {
   width: 100%;
   min-height: 50px;
@@ -127,13 +120,28 @@
   padding-right: 16px;
 
   color: $white-text-color;
-  background-color: inherit;
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  box-shadow: $main-btn-shadow;
+  outline: none;
 
   &::placeholder {
     font-style: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.subscription-form__btn {
+  @extend %flexCenter;
+
+  @media screen and (max-width: $desktop - 1px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

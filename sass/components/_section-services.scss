@@ -1,6 +1,5 @@
 .service {
   @extend %list;
-
   display: flex;
   flex-wrap: wrap;
   margin: -$grid-item-gap / 2;
@@ -20,13 +19,11 @@
   width: 100%;
   min-height: 70px;
   @extend %flexCenter;
-
   background-color: $service-overlay;
 }
 
 .service__title {
   @extend %title;
   margin-bottom: 0;
-
   color: $white-text-color;
 }

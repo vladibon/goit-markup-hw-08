@@ -1,10 +1,10 @@
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
+  max-width: 1064px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-color: $hero-bg-color;
   background-image: linear-gradient($hero-overlay, $hero-overlay),
@@ -13,24 +13,35 @@
   background-position: center;
   background-size: cover;
 
-  &__content {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
+}
 
-  &__heading {
-    margin-top: 0;
-    margin-bottom: 30px;
+.hero__content {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-text-color;
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
   }
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-text-color;
 
   @media screen and (min-width: $desktop) {
     font-size: 44px;

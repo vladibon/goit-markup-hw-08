@@ -88,12 +88,16 @@
 }
 
 .menu-btn {
-  display: inline-flex;
   margin: 0;
   padding: 0;
-  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   fill: $title-text-color;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
   transition: fill $animation;
 
   &:hover,

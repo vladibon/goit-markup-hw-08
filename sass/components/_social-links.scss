@@ -1,9 +1,7 @@
 .social {
   @extend %list;
-
-  display: inline-flex;
+  @extend %flexCenter;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .social__item {
@@ -23,6 +21,7 @@
   fill: $icon-color;
   background-color: inherit;
   border-radius: 50%;
+  outline: none;
   transition: fill $animation, background-color $animation;
 
   &--white {
