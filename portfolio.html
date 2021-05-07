@@ -31,21 +31,112 @@
 
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a class="link site-nav__link" href="./index.html">Студия</a>
+              <a class="link site-nav__link" href="./index.html">Студия </a>
             </li>
 
             <li class="site-nav__item">
               <a
                 class="link site-nav__link site-nav__link--active"
                 href="./portfolio.html"
-                >Портфолио
-              </a>
+                >Портфолио</a
+              >
             </li>
 
             <li class="site-nav__item">
               <a class="link site-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
+
+          <!-- Mobile Menu -->
+          <div class="menu" id="menu" data-menu>
+            <ul class="list">
+              <li class="item">
+                <a class="link link--menu" href="./index.html">Студия </a>
+              </li>
+
+              <li class="item">
+                <a class="link link--menu link--active" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+
+              <li class="item">
+                <a class="link link--menu" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="list list--contacts">
+              <li class="item">
+                <a class="link link--phone" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+
+              <li class="item">
+                <a class="link link--mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="list list--social">
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
+
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="menu__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-btn
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu__icon" href="./images/icons.svg#menu"></use>
+              <use class="menu__icon-close" href="./images/icons.svg#menu-close"></use>
+            </svg>
+          </button>
         </nav>
 
         <!-- Header Contacts -->

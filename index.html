@@ -46,100 +46,93 @@
           </ul>
 
           <!-- Mobile Menu -->
-          <div class="menu" data-menu>
-            <button
-              class="menu__btn"
-              type="button"
-              aria-expanded="false"
-              aria-controls="menu"
-              data-menu-btn
-            >
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="menu__icon" href="./images/icons.svg#menu"></use>
-                <use class="menu__icon-close" href="./images/icons.svg#menu-close"></use>
-              </svg>
-            </button>
+          <div class="menu" id="menu" data-menu>
+            <ul class="list">
+              <li class="item">
+                <a class="link link--menu link--active" href="./index.html">Студия </a>
+              </li>
 
-            <div class="menu__content" id="menu">
-              <ul class="menu-nav">
-                <li class="menu-nav__item">
-                  <a
-                    class="link menu-nav__link menu-nav__link--active"
-                    href="./index.html"
-                    >Студия
-                  </a>
-                </li>
+              <li class="item">
+                <a class="link link--menu" href="./portfolio.html">Портфолио</a>
+              </li>
 
-                <li class="menu-nav__item">
-                  <a class="link menu-nav__link" href="./portfolio.html">Портфолио</a>
-                </li>
+              <li class="item">
+                <a class="link link--menu" href="#contacts">Контакты</a>
+              </li>
+            </ul>
 
-                <li class="menu-nav__item">
-                  <a class="link menu-nav__link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
+            <ul class="list list--contacts">
+              <li class="item">
+                <a class="link link--phone" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
 
-              <ul class="menu-contacts">
-                <li>
-                  <a class="link menu-contacts__link" href="tel:+380961111111">
-                    +38 096 111 11 11
-                  </a>
-                </li>
+              <li class="item">
+                <a class="link link--mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
 
-                <li>
-                  <a class="link menu-contacts__link" href="mailto:info@devstudio.com">
-                    info@devstudio.com
-                  </a>
-                </li>
-              </ul>
+            <ul class="list list--social">
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
 
-              <ul class="menu-social">
-                <li class="menu-social__item">
-                  <a
-                    class="menu-social__link"
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    rel="nofollow noreferrer"
-                  >
-                    Instagram
-                  </a>
-                </li>
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
 
-                <li class="menu-social__item">
-                  <a
-                    class="menu-social__link"
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="nofollow noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </li>
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
 
-                <li class="menu-social__item">
-                  <a
-                    class="menu-social__link"
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="nofollow noreferrer"
-                  >
-                    Facebook
-                  </a>
-                </li>
-
-                <li class="menu-social__item">
-                  <a
-                    class="menu-social__link"
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="nofollow noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="item--social">
+                <a
+                  class="link link--social"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
+          <button
+            class="menu__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-btn
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu__icon" href="./images/icons.svg#menu"></use>
+              <use class="menu__icon-close" href="./images/icons.svg#menu-close"></use>
+            </svg>
+          </button>
         </nav>
 
         <!-- Header Contacts -->

@@ -1,11 +1,6 @@
-.page-header__container {
-  display: flex;
-}
-
 .page-header__logo {
   margin-right: 93px;
 }
-
 .page-header__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -68,23 +63,5 @@
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-}
-
-.menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-
-  padding: 48px 40px;
-  // display: none;
-
-  font-size: 20px;
-  background-color: $primary-bg-color;
-
-  &--is-open {
-    display: block;
   }
 }
