@@ -1,67 +1,7 @@
-.page-header__logo {
-  margin-right: 93px;
-}
 .page-header__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.page-header__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  display: flex;
-  align-items: center;
-
-  color: $primary-text-color;
-  fill: currentColor;
-}
-
 .site-nav {
   margin-right: auto;
-
-  display: flex;
-  align-items: center;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
-
-  &--active {
-    position: relative;
-    color: $accent-color;
-  }
-
-  &--active::after {
-    content: "";
-
-    position: absolute;
-    bottom: -1px;
-
-    width: 100%;
-    height: 4px;
-    display: block;
-
-    background-color: $accent-color;
-    border-radius: 2px;
-  }
-}
-
-.link {
-  font-weight: 500;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $title-text-color;
-  transition: color $animation;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
