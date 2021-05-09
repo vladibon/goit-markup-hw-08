@@ -26,6 +26,26 @@
   }
 }
 
+.filter__btn {
+  @extend %btn;
+  padding: 6px 22px;
+  min-width: 72px;
+
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  background-color: $accent-bg-color;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $white-text-color;
+    background-color: $accent-color;
+    box-shadow: $filter-btn-shadow;
+  }
+}
+
 // Portfolio
 .portfolio {
   @extend %list;

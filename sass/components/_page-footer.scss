@@ -137,7 +137,7 @@
   }
 }
 
-.subscription-form__btn {
+.subscription-form__btn-main {
   @extend %flexCenter;
 
   @media screen and (max-width: $desktop - 1px) {
