@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./utils/breakpoints";
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./utils/visually-hidden";
@@ -9,6 +8,7 @@
 @import "./components/buttons";
 @import "./components/social-links";
 @import "./components/page-header";
+@import "./components/mobile-menu";
 @import "./components/section-hero";
 @import "./components/section-features";
 @import "./components/section-services";

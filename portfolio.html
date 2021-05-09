@@ -22,41 +22,41 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container page-header__container">
-        <!-- Site navigation -->
-        <nav class="site-nav">
-          <!-- Company`s logo -->
+        <!-- Site Navigation -->
+        <nav class="site-nav" role="navigation">
+          <!-- Company`s Logo -->
           <a class="logo page-header__logo" href="./index.html" lang="en">
             Web<span class="logo__text">Studio</span>
           </a>
 
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a class="link link--site-nav" href="./index.html"> Студия </a>
+              <a class="site-nav__link" href="./index.html"> Студия </a>
             </li>
 
             <li class="site-nav__item">
-              <a class="link link--site-nav link--current" href="./portfolio.html"
+              <a class="site-nav__link site-nav__link--active" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
 
             <li class="site-nav__item">
-              <a class="link link--site-nav" href="#contacts">Контакты</a>
+              <a class="site-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
 
           <!-- Mobile Menu Button -->
           <button
-            class="mobile-menu__btn"
+            class="mobile-menu-btn"
             type="button"
             aria-expanded="false"
             aria-controls="menu"
             data-menu-btn
           >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="mobile-menu__icon" href="./images/icons.svg#menu"></use>
+              <use class="mobile-menu-btn__icon" href="./images/icons.svg#menu"></use>
               <use
-                class="mobile-menu__icon-close"
+                class="mobile-menu-btn__icon-close"
                 href="./images/icons.svg#menu-close"
               ></use>
             </svg>
@@ -64,40 +64,45 @@
 
           <!-- Mobile Menu -->
           <div class="mobile-menu" id="menu" data-menu>
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
-                <a class="link link--nav" href="./index.html">Студия</a>
+            <!-- Mobile Site Navigation -->
+            <ul class="mobile-site-nav" role="navigation">
+              <li class="mobile-site-nav__item">
+                <a class="mobile-site-nav__link" href="./index.html">Студия</a>
               </li>
 
-              <li class="mobile-menu__item">
-                <a class="link link--nav link--active" href="./portfolio.html"
+              <li class="mobile-site-nav__item">
+                <a
+                  class="mobile-site-nav__link mobile-site-nav__link--active"
+                  href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
 
-              <li class="mobile-menu__item">
-                <a class="link link--nav" href="#contacts">Контакты</a>
+              <li class="mobile-site-nav__item">
+                <a class="mobile-site-nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
 
-            <ul class="mobile-menu__list mobile-menu__list--contacts">
-              <li class="mobile-menu__item">
-                <a class="link link--phone" href="tel:+380961111111">
+            <!-- Mobile Contacts -->
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__phone" href="tel:+380961111111">
                   +38 096 111 11 11
                 </a>
               </li>
 
-              <li class="mobile-menu__item">
-                <a class="link link--mail" href="mailto:info@devstudio.com">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
                   info@devstudio.com
                 </a>
               </li>
             </ul>
 
-            <ul class="mobile-menu__list mobile-menu__list--social">
-              <li class="mobile-menu__item-social">
+            <!-- Mobile Social Links -->
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
                 <a
-                  class="link link--social"
+                  class="mobile-social__link"
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="nofollow noreferrer"
@@ -106,9 +111,9 @@
                 </a>
               </li>
 
-              <li class="mobile-menu__item-social">
+              <li class="mobile-social__item">
                 <a
-                  class="link link--social"
+                  class="mobile-social__link"
                   href="https://twitter.com/"
                   target="_blank"
                   rel="nofollow noreferrer"
@@ -117,9 +122,9 @@
                 </a>
               </li>
 
-              <li class="mobile-menu__item-social">
+              <li class="mobile-social__item">
                 <a
-                  class="link link--social"
+                  class="mobile-social__link"
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="nofollow noreferrer"
@@ -128,9 +133,9 @@
                 </a>
               </li>
 
-              <li class="mobile-menu__item-social">
+              <li class="mobile-social__item">
                 <a
-                  class="link link--social"
+                  class="mobile-social__link"
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="nofollow noreferrer"
@@ -145,7 +150,7 @@
         <!-- Header Contacts -->
         <ul class="header-contacts">
           <li class="header-contacts__item">
-            <a class="link link--header-contacts" href="mailto:info@devstudio.com">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg width="16" height="12" style="margin-right: 10px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -154,7 +159,7 @@
           </li>
 
           <li class="header-contacts__item">
-            <a class="link link--header-contacts" href="tel:+380961111111">
+            <a class="header-contacts__link" href="tel:+380961111111">
               <svg width="10" height="16" style="margin-right: 10px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -423,7 +428,7 @@
       <div class="container page-footer__container">
         <!-- Footer Contacts -->
         <div class="contacts">
-          <!-- Company`s logo -->
+          <!-- Company`s Logo -->
           <a class="logo page-footer__logo" href="./index.html" lang="en">
             Web<span class="logo__text logo__text--inverse">Studio</span>
           </a>

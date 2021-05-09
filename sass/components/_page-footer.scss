@@ -16,6 +16,11 @@
   }
 }
 
+.page-footer__logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
 .page-footer__social-links {
   @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 60px;
@@ -28,11 +33,6 @@
   @media screen and (min-width: $desktop) {
     flex-basis: 206px;
   }
-}
-
-.page-footer__logo {
-  margin-bottom: 20px;
-  display: inline-block;
 }
 
 .page-footer__title {
