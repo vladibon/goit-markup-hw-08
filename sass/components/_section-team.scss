@@ -16,8 +16,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin: $grid-item-gap / 2;
     flex-basis: calc((100% - 2 * #{$grid-item-gap}) / 2);
+    margin: $grid-item-gap / 2;
   }
 
   @media screen and (min-width: $desktop) {

@@ -8,14 +8,14 @@
 
 .client__item {
   @media screen and (max-width: $tablet - 1px) {
-    margin: $grid-item-gap / 2;
     flex-basis: calc((100% - 2 * #{$grid-item-gap}) / 2);
     flex-grow: 1;
+    margin: $grid-item-gap / 2;
   }
 
   @media screen and (min-width: $tablet) {
-    margin: $grid-item-gap / 2;
     flex-basis: calc((100% - 3 * #{$grid-item-gap}) / 3);
+    margin: $grid-item-gap / 2;
   }
 
   @media screen and (min-width: $desktop) {

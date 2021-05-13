@@ -8,8 +8,8 @@
 .service__item {
   position: relative;
 
-  margin: $grid-item-gap / 2;
   flex-basis: calc((100% - 3 * #{$grid-item-gap}) / 3);
+  margin: $grid-item-gap / 2;
 }
 
 .service__overlay {
