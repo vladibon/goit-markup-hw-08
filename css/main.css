@@ -375,7 +375,7 @@ img {
           transform: translate(-50%, -100%);
   width: 100%;
   max-width: 480px;
-  min-height: 796px;
+  min-height: 100vh;
   padding: 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +433,10 @@ img {
 }
 .mobile-menu-btn--is-open .mobile-menu-btn__icon-close {
   display: block;
+}
+
+.mobile-site-nav {
+  margin-bottom: 64px;
 }
 
 .mobile-site-nav__item:not(:last-child),

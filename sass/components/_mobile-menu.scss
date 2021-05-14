@@ -8,7 +8,7 @@
 
   width: 100%;
   max-width: 480px;
-  min-height: 796px;
+  min-height: 100vh;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -68,6 +68,7 @@
 // Mobile Site Navigation
 .mobile-site-nav {
   @extend %list;
+  margin-bottom: 64px;
 }
 
 .mobile-site-nav__item:not(:last-child),
