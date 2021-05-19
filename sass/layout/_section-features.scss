@@ -1,0 +1,41 @@
+.feature {
+  @extend %list;
+
+  @include respond-above($tablet) {
+    @include grid();
+  }
+}
+
+.feature__item {
+  @include respond-below($tablet) {
+    &:not(:last-child) {
+      margin-bottom: $grid-item-gap;
+    }
+  }
+
+  @include respond-above($tablet) {
+    @include grid-item(2);
+  }
+
+  @include respond-above($desktop) {
+    @include grid-item(4);
+  }
+}
+
+.feature__bg {
+  height: 120px;
+  margin-bottom: $grid-item-gap;
+  @extend %flexCenter;
+
+  background-color: $accent-bg-color;
+  border-radius: 4px;
+}
+
+.feature__title {
+  @extend %title;
+  color: $title-text-color;
+
+  @include respond-below($tablet) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include respond-above($desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--team {
+    background-color: $accent-bg-color;
+  }
+
+  &--service {
+    padding-top: 0;
+
+    @include respond-below($desktop) {
+      display: none;
+    }
+  }
+}
